@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幻のポートフォリオ | Phantom Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div class="sakura-container"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="japanese-text">幻</span>
+                <span class="english-text">PHANTOM</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#channels" class="nav-link">Channels</a></li>
+                <li><a href="#content" class="nav-link">Content</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Welcome to My</span>
+                <span class="title-main">Digital Realm</span>
+                <span class="title-sub">ようこそ、私のデジタル世界へ</span>
+            </h1>
+            <div class="hero-buttons">
+                <button class="cta-button primary" onclick="scrollToSection('channels')">
+                    <span>Explore Channels</span>
+                    <div class="button-glow"></div>
+                </button>
+                <button class="cta-button secondary" onclick="scrollToSection('content')">
+                    <span>View Content</span>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Channels Section -->
+    <section id="channels" class="channels-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="english">My Channels</span>
+                <span class="japanese">私のチャンネル</span>
+            </h2>
+            <div class="channels-grid">
+                <!-- YouTube Channel -->
+                <div class="channel-card youtube" data-channel="youtube">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </div>
+                        <h3>Kaisencuts</h3>
+                        <p>Epic anime edits & AMVs</p>
+                        <div class="stats">
+                            <span class="stat">YouTube</span>
+                            <span class="stat">Edits</span>
+                        </div>
+                        <button class="visit-btn" onclick="window.open('https://www.youtube.com/@KaisenFinalCuts', '_blank')">
+                            Visit Channel
+                        </button>
+                    </div>
+                </div>
+
+                <!-- TikTok Channel -->
+                <div class="channel-card tiktok" data-channel="tiktok">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91.02 2.5.06 4.06.54 4.88 1.11a5.11 5.11 0 0 1 1.72 3.36c.23 1.67.31 3.33.32 4.99.01 1.72-.07 3.44-.22 5.14-.06.67-.17 1.32-.34 1.96a4.45 4.45 0 0 1-1.12 1.82c-.53.53-1.18.94-1.9 1.2a6.54 6.54 0 0 1-3.82.35c-1.32-.15-2.54-.54-3.64-1.15a5.23 5.23 0 0 1-1.8-1.62c-.7-1.05-1.03-2.28-1.03-3.54v-.37c.01-.21.02-.42.05-.63.07-.56.19-1.1.36-1.63.28-.78.67-1.51 1.17-2.16.67-.86 1.54-1.58 2.55-2.06a7.33 7.33 0 0 1 4.23-.82c.47.06.94.15 1.4.27v2.45c-.35-.09-.7-.16-1.06-.2a4.02 4.02 0 0 0-2.32.35c-.73.28-1.37.73-1.9 1.32-.5.56-.86 1.22-1.07 1.94a5.66 5.66 0 0 0-.36 2.29c.04.8.22 1.57.56 2.29.32.68.77 1.29 1.32 1.8.59.54 1.28.96 2.03 1.23.8.29 1.65.39 2.5.34.85-.05 1.67-.25 2.43-.6.72-.33 1.37-.79 1.9-1.36.53-.57.93-1.24 1.18-1.96.25-.75.35-1.54.35-2.34.02-1.67-.02-3.33-.1-4.99-.05-1.39-.13-2.78-.25-4.16-.09-1.04-.22-2.07-.39-3.1a8.8 8.8 0 0 0-.69-2.15 3.68 3.68 0 0 0-1.39-1.48c-.45-.29-.97-.44-1.5-.44-.78-.01-1.55.11-2.31.33-.68.2-1.34.47-1.97.82v12.68h-4.18V6.71h4.18v.01z"/>
+                            </svg>
+                        </div>
+                        <h3>Conpros_</h3>
+                        <p>Quick edits & viral content</p>
+                        <div class="stats">
+                            <span class="stat">TikTok</span>
+                            <span class="stat">Shorts</span>
+                        </div>
+                        <button class="visit-btn" onclick="window.open('https://tiktok.com/@Conpros_', '_blank')">
+                            Visit Channel
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Twitch Channel -->
+                <div class="channel-card twitch" data-channel="twitch">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="platform-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11.64 5.35H13.3v3.3h-1.66z"/><path d="M2.26 4.94L3.9 2.3h4.52v5.35H3.9zM6.68 13.3h3.3v-3.3H6.68zM9.32 8.65h4.52l1.64-2.64V13.3H9.32zM20.7 6.94l-1.64 4.52-2.64 1.64h-3.3v-3.3h1.66v-1.66h-1.66v3.3H13.3l-1.64 1.64v3.3h1.64l4.52-1.64 2.64-6.6z"/>
+                            </svg>
+                        </div>
+                        <h3>Hyuunle3i</h3>
+                        <p>Live gaming streams</p>
+                        <div class="stats">
+                            <span class="stat">Twitch</span>
+                            <span class="stat">Live</span>
+                        </div>
+                        <button class="visit-btn" onclick="window.open('https://twitch.tv/Hyuunle3i', '_blank')">
+                            Visit Channel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="content" class="content-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="english">Content Types</span>
+                <span class="japanese">コンテンツタイプ</span>
+            </h2>
+            <div class="content-showcase">
+                <div class="content-item" data-content="edits">
+                    <div class="content-preview">
+                        <div class="preview-placeholder">
+                            <div class="edit-icon">✂️</div>
+                            <span>Anime Edits</span>
+                        </div>
+                    </div>
+                    <div class="content-info">
+                        <h3>Anime Edits & AMVs</h3>
+                        <p>High-energy anime edits with synched music and visual effects. From action-packed sequences to emotional moments, bringing anime to life through creative editing.</p>
+                        <div class="features">
+                            <span class="feature-tag">4K Quality</span>
+                            <span class="feature-tag">Synched Audio</span>
+                            <span class="feature-tag">Effects</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-item" data-content="streams">
+                    <div class="content-preview">
+                        <div class="preview-placeholder">
+                            <div class="stream-icon">🎮</div>
+                            <span>Live Streams</span>
+                        </div>
+                    </div>
+                    <div class="content-info">
+                        <h3>Gaming Live Streams</h3>
+                        <p>Chill gaming sessions during free time. Various games, casual gameplay, and interaction with viewers. Creating a relaxed and entertaining streaming environment.</p>
+                        <div class="features">
+                            <span class="feature-tag">Live Chat</span>
+                            <span class="feature-tag">Gaming</span>
+                            <span class="feature-tag">Casual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="english">Get In Touch</span>
+                <span class="japanese">連絡先</span>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Interested in collaborating or have questions about my content? Feel free to reach out through any of my channels!</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@KaisenFinalCuts" target="_blank" class="social-link youtube">
+                            <span>YouTube</span>
+                        </a>
+                        <a href="https://www.tiktok.com/@conpros_" target="_blank" class="social-link tiktok">
+                            <span>TikTok</span>
+                        </a>
+                        <a href="https://www.twitch.tv/hyuunle3i" target="_blank" class="social-link twitch">
+                            <span>Twitch</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Phantom Portfolio. Please Come Check Out My Work</p>
+            <div class="footer-decoration">
+                <span class="japanese-pattern">〰</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
